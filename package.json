@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "release": "bun run build && bunx wrangler pages deploy ./dist"
   },
   "dependencies": {
     "@astrojs/check": "^0.5.10",
@@ -15,5 +16,8 @@
     "astro": "^4.6.2",
     "svelte": "^4.2.15",
     "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "wrangler": "^3.51.0"
   }
 }
