@@ -6,8 +6,7 @@
     "dev": "astro dev --host",
     "start": "astro dev",
     "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro",
+    "preview": "bun run build && bunx wrangler pages dev ./dist --ip 0.0.0.0",
     "release": "bun run build && bunx wrangler pages deploy ./dist"
   },
   "dependencies": {
