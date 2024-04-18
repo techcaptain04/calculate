@@ -4,6 +4,9 @@
     
     $: if (audioPlayer) {
         audioPlayer.currentTime = 1.75;
+        setTimeout(() => {
+            audioPlayer.play();
+        }, 1000);
         audioPlayer.play();
     }
 </script>
