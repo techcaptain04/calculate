@@ -1,13 +1,14 @@
 <!-- create an invisible audio player -->
 <script lang="ts">
+    export let isPlaying: boolean;
     let audioPlayer: HTMLAudioElement;
     
     $: if (audioPlayer) {
         audioPlayer.currentTime = 1.75;
-        setTimeout(() => {
-            audioPlayer.play();
-        }, 1000);
-        audioPlayer.play();
+    }
+
+    $: if (isPlaying) {
+        audioPlayer && audioPlayer.play();
     }
 </script>
 <style scoped>

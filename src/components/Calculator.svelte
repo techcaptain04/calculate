@@ -1,6 +1,8 @@
 <!-- create a calculator using svelte -->
 <script lang="ts">
   import Gosling from "./Gosling.svelte";
+  import Pixies from "./Pixies.svelte";
+
   let num1 = 0;
   let num2 = 0;
   let result = 0;
@@ -68,4 +70,6 @@
   {:else}
     <h2>Result: {result}</h2>
   {/if}
+
+  <Pixies isPlaying={changed} />
 </div>

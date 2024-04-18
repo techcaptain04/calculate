@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Pixies from "./Pixies.svelte";
   import Ryan from "../assets/ryan.jpg";
   export let result: number;
 </script>
@@ -67,5 +66,4 @@
     <span class="result">
         <p>maybe {result} or something</p>
     </span>
-    <Pixies/>
 </div>
